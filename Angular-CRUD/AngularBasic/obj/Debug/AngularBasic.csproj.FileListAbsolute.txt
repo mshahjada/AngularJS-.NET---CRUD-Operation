@@ -1,0 +1,196 @@
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\ApplicationInsights.config
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\roslyn\csc.exe
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\roslyn\csc.exe.config
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\roslyn\csc.rsp
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\roslyn\csi.exe
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\roslyn\csi.rsp
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\roslyn\System.AppContext.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\roslyn\System.Collections.Immutable.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\roslyn\System.IO.FileSystem.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\roslyn\System.Reflection.Metadata.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\roslyn\vbc.exe
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\roslyn\vbc.exe.config
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\roslyn\vbc.rsp
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\roslyn\VBCSCompiler.exe
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\roslyn\VBCSCompiler.exe.config
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\AngularBasic.dll.config
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\AngularBasic.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\AngularBasic.pdb
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\Antlr3.Runtime.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\Microsoft.AI.DependencyCollector.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\Microsoft.AI.Web.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\Microsoft.AI.WindowsServer.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\Microsoft.ApplicationInsights.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\Microsoft.Web.Infrastructure.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\Newtonsoft.Json.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\System.Web.Helpers.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\System.Web.Mvc.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\System.Web.Optimization.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\System.Web.Razor.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\System.Web.WebPages.Deployment.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\System.Web.WebPages.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\System.Web.WebPages.Razor.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\WebGrease.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\System.Web.Helpers.xml
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\System.Web.Mvc.xml
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\System.Web.Optimization.xml
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\System.Web.Razor.xml
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\System.Web.WebPages.xml
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\System.Web.WebPages.Deployment.xml
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\System.Web.WebPages.Razor.xml
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\Antlr3.Runtime.pdb
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\Newtonsoft.Json.xml
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\Microsoft.ApplicationInsights.xml
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\Microsoft.AI.DependencyCollector.xml
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\Microsoft.AI.WindowsServer.xml
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\bin\Microsoft.AI.Web.xml
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\obj\Debug\AngularBasic.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\AngularBasic\obj\Debug\AngularBasic.pdb
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\ApplicationInsights.config
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\roslyn\csc.exe
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\roslyn\csc.exe.config
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\roslyn\csc.rsp
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\roslyn\csi.exe
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\roslyn\csi.rsp
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\roslyn\System.AppContext.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\roslyn\System.Collections.Immutable.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\roslyn\System.IO.FileSystem.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\roslyn\System.Reflection.Metadata.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\roslyn\vbc.exe
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\roslyn\vbc.exe.config
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\roslyn\vbc.rsp
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\roslyn\VBCSCompiler.exe
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\roslyn\VBCSCompiler.exe.config
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\AngularBasic.dll.config
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\AngularBasic.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\AngularBasic.pdb
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\Antlr3.Runtime.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\Microsoft.AI.DependencyCollector.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\Microsoft.AI.Web.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\Microsoft.AI.WindowsServer.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\Microsoft.ApplicationInsights.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\Microsoft.Web.Infrastructure.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\Newtonsoft.Json.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\System.Web.Helpers.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\System.Web.Mvc.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\System.Web.Optimization.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\System.Web.Razor.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\System.Web.WebPages.Deployment.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\System.Web.WebPages.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\System.Web.WebPages.Razor.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\WebGrease.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\System.Web.Helpers.xml
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\System.Web.Mvc.xml
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\System.Web.Optimization.xml
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\System.Web.Razor.xml
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\System.Web.WebPages.xml
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\System.Web.WebPages.Deployment.xml
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\System.Web.WebPages.Razor.xml
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\Antlr3.Runtime.pdb
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\Newtonsoft.Json.xml
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\Microsoft.ApplicationInsights.xml
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\Microsoft.AI.DependencyCollector.xml
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\Microsoft.AI.WindowsServer.xml
+E:\Startup\Angular\AngularBasic\AngularBasic\bin\Microsoft.AI.Web.xml
+E:\Startup\Angular\AngularBasic\AngularBasic\obj\Debug\AngularBasic.dll
+E:\Startup\Angular\AngularBasic\AngularBasic\obj\Debug\AngularBasic.pdb
+E:\Startup\Angular\New folder\AngularBasic\bin\ApplicationInsights.config
+E:\Startup\Angular\New folder\AngularBasic\bin\roslyn\csc.exe
+E:\Startup\Angular\New folder\AngularBasic\bin\roslyn\csc.exe.config
+E:\Startup\Angular\New folder\AngularBasic\bin\roslyn\csc.rsp
+E:\Startup\Angular\New folder\AngularBasic\bin\roslyn\csi.exe
+E:\Startup\Angular\New folder\AngularBasic\bin\roslyn\csi.rsp
+E:\Startup\Angular\New folder\AngularBasic\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Startup\Angular\New folder\AngularBasic\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Startup\Angular\New folder\AngularBasic\bin\roslyn\System.AppContext.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\roslyn\System.Collections.Immutable.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\roslyn\System.IO.FileSystem.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\roslyn\System.Reflection.Metadata.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\roslyn\vbc.exe
+E:\Startup\Angular\New folder\AngularBasic\bin\roslyn\vbc.exe.config
+E:\Startup\Angular\New folder\AngularBasic\bin\roslyn\vbc.rsp
+E:\Startup\Angular\New folder\AngularBasic\bin\roslyn\VBCSCompiler.exe
+E:\Startup\Angular\New folder\AngularBasic\bin\roslyn\VBCSCompiler.exe.config
+E:\Startup\Angular\New folder\AngularBasic\bin\AngularBasic.dll.config
+E:\Startup\Angular\New folder\AngularBasic\bin\AngularBasic.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\AngularBasic.pdb
+E:\Startup\Angular\New folder\AngularBasic\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\Microsoft.AI.DependencyCollector.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\Microsoft.AI.Web.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\Microsoft.AI.WindowsServer.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\Microsoft.ApplicationInsights.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\Microsoft.Web.Infrastructure.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\Newtonsoft.Json.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\System.Web.Helpers.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\System.Web.Mvc.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\System.Web.Optimization.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\System.Web.Razor.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\System.Web.WebPages.Deployment.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\System.Web.WebPages.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\System.Web.WebPages.Razor.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\WebGrease.dll
+E:\Startup\Angular\New folder\AngularBasic\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Startup\Angular\New folder\AngularBasic\bin\System.Web.Helpers.xml
+E:\Startup\Angular\New folder\AngularBasic\bin\System.Web.Mvc.xml
+E:\Startup\Angular\New folder\AngularBasic\bin\System.Web.Optimization.xml
+E:\Startup\Angular\New folder\AngularBasic\bin\System.Web.Razor.xml
+E:\Startup\Angular\New folder\AngularBasic\bin\System.Web.WebPages.xml
+E:\Startup\Angular\New folder\AngularBasic\bin\System.Web.WebPages.Deployment.xml
+E:\Startup\Angular\New folder\AngularBasic\bin\System.Web.WebPages.Razor.xml
+E:\Startup\Angular\New folder\AngularBasic\bin\Newtonsoft.Json.xml
+E:\Startup\Angular\New folder\AngularBasic\bin\Microsoft.ApplicationInsights.xml
+E:\Startup\Angular\New folder\AngularBasic\bin\Microsoft.AI.DependencyCollector.xml
+E:\Startup\Angular\New folder\AngularBasic\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Startup\Angular\New folder\AngularBasic\bin\Microsoft.AI.WindowsServer.xml
+E:\Startup\Angular\New folder\AngularBasic\bin\Microsoft.AI.Web.xml
+E:\Startup\Angular\New folder\AngularBasic\obj\Debug\AngularBasic.dll
+E:\Startup\Angular\New folder\AngularBasic\obj\Debug\AngularBasic.pdb

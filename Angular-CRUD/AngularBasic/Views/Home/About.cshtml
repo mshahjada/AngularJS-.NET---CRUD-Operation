@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="~/Scripts/angular.js"></script>
+    <style type="text/css">
+        table {
+            width: 100%;
+        }
+
+
+        /*table.ms-table tr:nth-child(even) > td {
+            background-color: #f1f1f1;
+        }
+
+        table.ms-table tr:nth-child(odd) {
+            background-color: #FFFFFF;
+        }*/
+
+        .ms-grid-content div:hover {
+            background: #AAE7ED;
+        }
+
+        div.ms-grid {
+            border: 1px solid blue;
+        }
+
+        div.ms-grid-row {
+            border-top: 1px solid grey;
+        }
+
+        div.ms-grid-cell {
+            border-right: 1px solid grey;
+        }
+
+        div.ms-grid .ms-grid-header {
+            height: 20px;
+            border-bottom: 1px solid grey;
+            background: linear-gradient(to bottom right, skyblue, rgba(0,0,0,0));
+        }
+
+        /*div.ms-grid .ms-grid-content{
+            height:calc(100%-20px);
+        }*/
+    </style>
+    <script>
+        var module = angular.module('test', []).
+        controller('MainCtrl', function ($scope) {
+            $scope.title = 'Table Row Selection';
+
+            $scope.data = [{ Name: 'Tonmoy', Age: 25, Address: 'Chandpur' },
+                       { Name: 'Sagor', Age: 27, Address: 'Tangail' },
+                       { Name: 'Manik', Age: 24, Address: 'Rangpur' },
+                       { Name: 'Timu', Age: 24, Address: 'Rangpur' },
+                       { Name: 'Azhar', Age: 33, Address: 'Chandpur' },
+                       { Name: 'Tonmoy', Age: 25, Address: 'Chandpur' },
+                       { Name: 'Sagor', Age: 27, Address: 'Tangail' },
+                       { Name: 'Manik', Age: 24, Address: 'Rangpur' },
+                       { Name: 'Timu', Age: 24, Address: 'Rangpur' },
+                       { Name: 'Azhar', Age: 33, Address: 'Chandpur' },
+                       { Name: 'Tonmoy', Age: 25, Address: 'Chandpur' },
+                       { Name: 'Sagor', Age: 27, Address: 'Tangail' },
+                       { Name: 'Manik', Age: 24, Address: 'Rangpur' },
+                       { Name: 'Timu', Age: 24, Address: 'Rangpur' },
+                       { Name: 'Azhar', Age: 33, Address: 'Chandpur' }
+            ];
+
+
+            $scope.gridOption = {
+                showIndex:false,
+                height: '120px',
+                width: '100%',
+                columns: ['Name', { field: 'Age', name: 'Age Limit' }, { field: 'Address', name: 'Address' }],
+                data: $scope.data
+            }
+
+
+        }).
+        directive('msGrid', function ($compile) {
+            return {
+                restrict: 'A',
+                scope: {
+                    msGrid: '='
+                },
+                link: function (scope, el, attrs) {
+                    console.log(scope.msGrid);
+
+                    scope.getColumnProperty = function(){
+                        return {
+                            field: '',
+                            width: '',
+                            name: '',
+                            align: 'text-center'
+                        }
+                    };
+
+                    var defaultObj = {
+                        showIndex: true,
+                        height: '200px',
+                        width: '100%',
+                        columns: [],
+                        data: [],
+                    };
+
+                    var customObj = {};
+                    angular.extend(customObj, defaultObj, scope.msGrid);
+
+
+                    var defaultWidth = (((customObj.showIndex)? 95:100) / customObj.columns.length).toFixed(6);
+                    for (var i = 0; i < customObj.columns.length ; i++) {
+                        var defaultColumn = scope.getColumnProperty();
+
+                        if (typeof customObj.columns[i] == 'object') {
+                            var column = customObj.columns[i];
+                            if (!column.hasOwnProperty('field') || column.field == '')
+                                continue;
+                            else {
+                                var mapColumn = {};
+                                angular.extend(mapColumn, defaultColumn, column);
+                                if (mapColumn.width == '')
+                                    mapColumn.width = defaultWidth + '%';
+                                if (mapColumn.name == '')
+                                    mapColumn.name = column.field;
+
+                                defaultColumn = mapColumn;
+                            }
+                        }
+                        else {
+                            defaultColumn.field = customObj.columns[i];
+                            defaultColumn.width = defaultWidth + '%';
+                            defaultColumn.name = customObj.columns[i];
+                        }
+                        customObj.columns[i] = defaultColumn;
+                    }
+
+
+                    var contentHeight = '';
+
+
+                    console.log(customObj.height)
+                    if (customObj.height.indexOf('%')!=-1) {
+                        contentHeight = customObj.height;
+                    }
+                    else if (customObj.height.indexOf('vh') != -1) {
+                        contentHeight = customObj.height.replace('vh', '').trim();
+                        contentHeight = (parseFloat(contentHeight) - parseFloat(3)).toString() + 'vh';
+                    }
+                    else {
+                        contentHeight = customObj.height.replace('px', '').trim();
+                        contentHeight = (parseFloat(contentHeight) - parseFloat(20)).toString() + 'px';
+                    }
+
+                    //style="position:fixed;"
+                    var html = '<div class="position-left ms-grid" style="width:' + customObj.width + '; height:' + customObj.height + ';">';
+
+                        html += '<div class="position-left ms-grid-header" >';
+                        if (customObj.showIndex) {
+                            html += '<div class="ms-grid-cell" style="float:left; width:5%; text-align:right">SL</div>';
+                        }
+                        for (var i = 0; i < customObj.columns.length; i++) {
+                            html += '<div class="ms-grid-cell" style="float:left; width:' + customObj.columns[i].width + '; text-align:' + customObj.columns[i].align + '">' + customObj.columns[i].name + '</div>';
+                        }
+                        html += '</div>';
+
+                        html += '<div class="position-left ms-grid-content" style="height:' + contentHeight + '; overflow:auto; ">';
+                        for (var j = 0; j < customObj.data.length; j++) {
+                            html += '<div class="position-left ms-grid-row">'
+                            if (customObj.showIndex) {
+                                html += '<div class="ms-grid-cell" style="float:left; width:5%; text-align:right">'+(j+1)+'</div>';
+                            }
+                            for (var i = 0; i < customObj.columns.length; i++)
+                            {
+                                html += '<div class="ms-grid-cell" style="float:left; width:' + customObj.columns[i].width + '; text-align:' + customObj.columns[i].align + '">' + customObj.data[j][customObj.columns[i].field] + '</div>';
+                            }
+                            html += '</div>';
+                        }
+                        html += '</div>';
+
+                        html += '</div>';
+
+                        el.append(html);
+
+                        var contentEl = document.getElementsByClassName('ms-grid-content');
+                        if (contentEl[0].scrollHeight > contentEl[0].clientHeight) {
+                            var headerContent = document.getElementsByClassName('ms-grid-header');
+                            for (var i = 0; i < headerContent.length; i++) {
+                                headerContent[i].style.paddingRight = '4px';
+                            }
+                        }
+                }
+            }
+
+
+
+
+        }).
+        directive('readTest', function ($compile) {
+
+            //console.log(obj);
+            return {
+                restrict: 'A',
+                scope: {
+                    readTest: '='
+                },
+                link: function (scope, el, attrs) {
+                    //console.log(scope.readTest.Name);
+                }
+            }
+
+        });
+
+    </script>
+</head>
+
+<body ng-app="test">
+
+    <div class="position-left" ng-controller="MainCtrl" style="text-align:center; float:left;">
+        <!--<table class="ms-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Kasem</td>
+                    <td>12</td>
+                    <td>Dhaka</td>
+                </tr>
+                <tr>
+                    <td>Rahim</td>
+                    <td>25</td>
+                    <td>Dhaka</td>
+                </tr>
+                <tr>
+                    <td>Sabbir</td>
+                    <td>20</td>
+                    <td>Chitta</td>
+                </tr>
+                <tr>
+                    <td>Tareq</td>
+                    <td>15</td>
+                    <td>BD</td>
+                </tr>
+                <tr>
+                    <td>Hasan</td>
+                    <td>22</td>
+                    <td>Pabna</td>
+                </tr>
+            </tbody>
+        </table>-->
+
+        <div class="position-left">
+            <div ms-grid="gridOption"></div>
+        </div>
+    </div>
+</body>
+</html>

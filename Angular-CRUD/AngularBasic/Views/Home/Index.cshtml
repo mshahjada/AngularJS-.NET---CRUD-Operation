@@ -1,0 +1,227 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@*@model IEnumerable<AngularBasic.Models.Customer>*@
+
+
+<style type="text/css">
+    table{
+        width:100%;
+    }
+    table tr, td, th{
+        border:1px solid grey;
+    }
+    table  td, th {
+        padding: 2px 5px 2px 5px;
+    }
+    table th {
+       background-color:skyblue;
+    }
+    .row .col-lg-12{
+        padding-top:5px;
+    }
+    .region-event{
+        margin-right:2px;
+        float:left;
+    }
+
+    .region-event div{
+        float:left;
+        margin-right:5px;
+    }
+</style>
+
+<div class="row" ng-app="defaultApp" ng-controller="customerCtrl">
+    <h4>CRUD Operation</h4>
+    <div class="row">
+        <div class="col-lg-12" style="height:200px">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th ng-repeat="head in columns">
+                            {{head}}
+                        </th>
+                        <th>
+                            Operation
+                        </th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr ng-repeat="data in customers">
+                        <td>
+                            {{data.CustomerId}}
+                        </td>
+                        <td>
+                            {{data.CustomerName}}
+                        </td>
+                        <td>
+                            {{data.Address}}
+                        </td>
+                        <td>
+                            {{data.ContactNo}}
+                        </td>
+                        <td>
+                            {{data.Remarks}}
+                        </td>
+                        <td>
+                          <div ng-if="data.CustomerId>0" class="region-event">
+                              <div><button class="btn btn-info btn-xs" ng-click="edit(data)" ><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></button></div>
+                              <div><button class="btn btn-info btn-xs" ng-click="view(data.CustomerId)"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> </button></div>
+                              <div><button class="btn btn-danger btn-xs" ng-click="delete(data.CustomerId)"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> </button></div>
+                          </div>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <h3>{{headerTitle}}</h3>
+        <div class="row col-lg-12">
+            <div class="col-lg-2"><label class="control-label">Customer Id</label></div>
+            <div class="col-lg-10"><input type="number" class="form-control" ng-model="customer.CustomerId" /></div>
+        </div>
+        <div class="row col-lg-12">
+            <div class="col-lg-2"><label class="control-label">Customer Name</label></div>
+            <div class="col-lg-10"><input class="form-control" ng-model="customer.CustomerName" /></div>
+        </div>
+        <div class="row col-lg-12">
+            <div class="col-lg-2"><label class="control-label">Address</label></div>
+            <div class="col-lg-10"><input class="form-control" ng-model="customer.Address" /></div>
+        </div>
+        <div class="row col-lg-12">
+            <div class="col-lg-2"><label class="control-label">Contact No</label></div>
+            <div class="col-lg-10"><input class="form-control" ng-model="customer.ContactNo" /></div>
+        </div>
+        <div class="row col-lg-12">
+            <div class="col-lg-2"><label class="control-label">Remarks</label></div>
+            <div class="col-lg-10"><input class="form-control" ng-model="customer.Remarks" /></div>
+        </div>
+    </div>
+    <div>
+        <button class="btn btn-info btn-sm" ng-click="reset()">Reset</button>
+        <button class="btn btn-success btn-sm" ng-click="save()">Save</button>
+    </div>
+    <div class="col-lg-12">
+        <div ms-grid="gridOption"></div>
+    </div>
+</div>
+
+@section Scripts{
+<script type="text/javascript">
+
+    var modelData = @Html.Raw(Json.Encode(ViewBag.Customers));
+
+    var module = angular.module('defaultApp', []);
+    module.controller('customerCtrl', function ($scope, $http, customerFac) {
+
+        $scope.headerTitle = "Add Customer";
+        $scope.customers = modelData;
+        $scope.customer = customerFac.getInstance();
+        $scope.columns = Object.getOwnPropertyNames($scope.customer);
+        $scope.IsEdit = false;
+
+        $scope.edit = function (obj) {
+            $scope.headerTitle = "Edit Customer";
+            $scope.customer = obj;
+            $scope.IsEdit = true;
+            var index = $scope.customers.indexOf($scope.customer);
+            console.log(index);
+        };
+
+        $scope.delete = function (id) {
+            debugger;
+            var obj = {}; var index = -1;
+            angular.forEach($scope.customers, function (item, pos) {
+                if (item.CustomerId == id) {
+                    obj = item;
+                    index = pos;
+                }
+                   
+            });
+
+            customerFac.delete(id, obj).then(
+                function (response) { $scope.customers.splice(index, 1); },
+                function (response) { alert(response.statusText); }
+            );
+        };
+
+        $scope.save = function () {
+            customerFac.save($scope.customer, $scope.IsEdit).then(
+                
+                function (response) {
+                    if ($scope.IsEdit) {
+                        var index = $scope.customers.indexOf($scope.customer);
+                    }
+                    else {
+                        $scope.customers.push(response.data);
+                    }
+                    
+                    
+                    $scope.reset();
+                },
+                function (response) { alert(response.statusText); }
+            );
+        };
+
+        $scope.view = function (id) {
+            customerFac.get(id).then(
+                function (response) { debugger; console.log(response.data); },
+                function (response) { alert(response.statusText); }
+            );
+        };
+
+        $scope.reset = function () {
+            // Call Constructor for Reset
+            $scope.customer = customerFac.getInstance();
+            $scope.headerTitle = "Add Customer";
+        }
+
+    });
+
+    module.factory('customerFac', function ($http) {
+        var config = { headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;' } };
+        var fac = {};
+        fac.getInstance = function () {
+            return {
+                CustomerId: 0,
+                CustomerName: '',
+                Address: '',
+                ContactNo: '',
+                Remarks: ''
+            }
+        }
+
+        fac.get = function (cusId) {
+            debugger;
+            return $http.get('/Home/Get', { params: { id: cusId } });
+        }
+
+        fac.save = function (obj, IsEdit) {
+            if (IsEdit)
+                return $http.post('/Home/Edit', obj, { headers: { "Content-Type": "application/json", "X-HTTP-Method-Override": "PUT" }});
+            else
+                return $http.post('/Home/Save', obj);
+        }
+
+        fac.delete = function (cusId, obj) {
+
+            // Here's I'm creating a tunnel using headers inside Http Method.
+            return $http.post('/Home/Delete', obj, { headers: { "Content-Type": "application/json", "X-HTTP-Method-Override": "DELETE" } });
+        }
+
+        return fac;
+    });
+
+
+
+</script>
+}
+
+
